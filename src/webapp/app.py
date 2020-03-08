@@ -29,15 +29,6 @@ def get_text_rank():
     keyphrases = text_rank(request.json['content'])
     return jsonify({'task': keyphrases}), 200
 
-@app.route('/internal/status', methods=['GET'])
-def get_internal_status():
-    return jsonify({"contact": {"phone-number": "+49 6221 345 4301"}}), 200
-
-@app.route('/internal/version', methods=['GET'])
-def get_internal_version():
-    return jsonify({"origin": "git@github.com:springernature/prs-reviewers.git","link": "git@github.com:springernature/prs-reviewers.git","revision": "d9275f00ec768249bceb07302fd63fd82a7182e2","branch": "master"}), 200
-
-
 def mount_web_app():
     port = int(os.getenv("PORT", 9099))
     
