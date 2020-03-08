@@ -1,4 +1,4 @@
-#Rest Service for Automatic Keyphrase Extraction from Scientific Articles.
+# Rest Service for Automatic Keyphrase Extraction from Scientific Articles.
 
 **Install Dependencies:**
 `pip install -r requirements.txt`
@@ -8,7 +8,7 @@
 
 It uses Flask, spacy, pke and nltk, it uses pke which allows for easy benchmarking of state-of-the-art keyphrase extraction models, and ships with supervised models trained on the [SemEval-2010 dataset](http://aclweb.org/anthology/S10-1004 "SemEval-2010 dataset").
 
-Currently supported keyphrase extraction Graph-based models:
+Currently supported keyphrase extraction Graph-based models via rest endpoints:
 - [PositionRank](http://www.aclweb.org/anthology/P17-1102.pdf "PositionRank")
 - [TopicRank](http://aclweb.org/anthology/I13-1062.pdf "TopicRank")
 - [TextRank](http://www.aclweb.org/anthology/W04-3252.pdf "TextRank")
