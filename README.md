@@ -1,14 +1,12 @@
-# AKESA Automatic Keyphrase Extraction from Scientific Articles.
+# AKESA - Automatic Keyphrase Extraction from Scientific Articles.
 
-### Rest Service for Automatic Keyphrase Extraction from Scientific Articles
+**AKESA** is an Rest Service for Automatic Keyphrase Extraction from Scientific Articles. it uses Flask, spacy, pke and nltk, it uses pke which allows for easy benchmarking of state-of-the-art keyphrase extraction models, and ships with supervised models trained on the [SemEval-2010 dataset](http://aclweb.org/anthology/S10-1004 "SemEval-2010 dataset").
 
 **Install Dependencies:**
 `pip install -r requirements.txt`
 
 **Run**
 `python src/main.py`
-
-It uses Flask, spacy, pke and nltk, it uses pke which allows for easy benchmarking of state-of-the-art keyphrase extraction models, and ships with supervised models trained on the [SemEval-2010 dataset](http://aclweb.org/anthology/S10-1004 "SemEval-2010 dataset").
 
 Currently supported keyphrase extraction Graph-based models via rest endpoints:
 - [PositionRank](http://www.aclweb.org/anthology/P17-1102.pdf "PositionRank")
