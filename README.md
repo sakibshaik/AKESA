@@ -1,4 +1,6 @@
-# Rest Service for Automatic Keyphrase Extraction from Scientific Articles.
+# AKESA Automatic Keyphrase Extraction from Scientific Articles.
+
+### Rest Service for Automatic Keyphrase Extraction from Scientific Articles
 
 **Install Dependencies:**
 `pip install -r requirements.txt`
